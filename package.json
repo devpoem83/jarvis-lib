@@ -1,0 +1,23 @@
+{
+  "name": "jarvis-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.13.1",
+    "static-server": "^2.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "jarvis": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://csahn@gitlab.eduwill.net/dev_team/jarvis-lib.git"
+  },
+  "keywords": [
+    "jarvis"
+  ],
+  "author": "csahn",
+  "license": "ISC"
+}

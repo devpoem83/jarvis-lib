@@ -1,0 +1,74 @@
+[{
+        "svcCd": "EDUWILL-1-1",
+        "svcNm": "레이어 배너1",
+        "totalCtgryNm": "글로벌 에듀윌 > 전체 메인 > 레이어 배너",
+        "banners": [{
+            "bnrNo": "1",
+            "bnrNm": "테스트 배너등록",
+            "endType": "1/2/3",
+            "expsrDevc": "/1/2/",
+            "uprndLocAdjst": 20,
+            "leftLocAdjst": 50,
+            "contents": [{
+                "contntNo": "1",
+                "contntType": "1",
+                "pcImgUrl": "https://www.eduwill.net/Img2/Gov2/main/renewal/banner/mbn_center_02_190930.jpg",
+                "calbak": "calbak1(1)",
+                "links": [{
+                    "linkType": "1",
+                    "linkUrl": "//www.eduwill.net",
+                    "linkMsg": ""
+                }]
+            }]
+        }]
+    },
+    {
+        "svcCd": "EDUWILL-1-2",
+        "svcNm": "레이어 배너2",
+        "totalCtgryNm": "글로벌 에듀윌 > 전체 메인 > 레이어 배너2",
+        "banners": [{
+            "bnrNo": "2",
+            "bnrNm": "테스트 배너등록2",
+            "endType": "0",
+            "expsrDevc": "/1/2/",
+            "uprndLocAdjst": 10,
+            "leftLocAdjst": 20,
+            "contents": [{
+                "contntNo": "1",
+                "contntType": "1",
+                "pcImgUrl": "https://img.eduwill.net/Img2/Gov2/main/renewal/banner/mbn_center_02_200205.jpg",
+                "calbak": "calbak(2)",
+                "links": [{
+                    "linkType": "1",
+                    "linkUrl": "//www.eduwill.net",
+                    "linkMsg": ""
+                }]
+
+            }]
+        }]
+    },
+    {
+        "svcCd": "EDUWILL-1-3",
+        "svcNm": "레이어 배너3",
+        "totalCtgryNm": "글로벌 에듀윌 > 전체 메인 > 레이어 배너3",
+        "banners": [{
+            "bnrNo": "3",
+            "bnrNm": "테스트 배너등록3",
+            "endType": "1",
+            "expsrDevc": "/1/2/",
+            "uprndLocAdjst": 10,
+            "leftLocAdjst": 20,
+            "contents": [{
+                "contntNo": "1",
+                "contntType": "1",
+                "pcImgUrl": "https://img.eduwill.net/Img2/Gov2/product/event_new/200122/banner/mbn_center_03_200120e.jpg",
+                "calbak": "calbak(3)",
+                "links": [{
+                    "linkType": "1",
+                    "linkUrl": "//www.eduwill.net",
+                    "linkMsg": ""
+                }]
+            }]
+        }]
+    }
+]

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Jarvis | Library Management System</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta content="대한민국 평생교육 No.1 에듀윌" name="description" />
+	<!-- <script src="//img.eduwill.net/resources/3s/assets/vendors/general/jquery/dist/jquery.js" type="text/javascript"> -->
+	<SCRIPT type="text/JavaScript" src="//www.eduwill.net/Common/Js/jquery/jquery-1.8.2.js"></SCRIPT>
+	</script>
+	<link rel="stylesheet" href="//img.eduwill.net/resources/ibm/front/live/css/ibm.css">
+	<script src="//img.eduwill.net/eduwill/live/libs/slick/slick.min.js"></script>
+	<script type="text/javascript" src="//jarvis-lib.eduwill.net/ibm/jarvis-ibm-v1.0.js"></script>
+	<script type="text/javascript">
+
+
+	</script>
+</head>
+
+<body>
+	<div id="SAMPLE">미리보기</div>
+</body>
+
+<script type="text/javascript">
+	var bannerHandler = new Jarvis.Ibm.BannerHandler();
+	bannerHandler.init();
+
+	var fnPreview = function () {
+		var url = document.location.href;
+		if (url.indexOf("?") > -1) {
+			var param = url.split("?")[1];
+			var bnrNo = param.split("=")[1];
+			if (typeof bnrNo != "undefined") {
+				var elementId = "SAMPLE";
+				if (typeof bannerHandler != "undefined") {
+					console.log("수동 시작");
+					bannerHandler.injectBanner(elementId, bnrNo);
+				}
+			}
+		}
+	}
+
+	fnPreview();
+</script>
+
+</html>

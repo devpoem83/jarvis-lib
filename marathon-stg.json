@@ -1,0 +1,67 @@
+{
+  "id": "/jarvis/jarvis-lib-stg",
+  "cmd": null,
+  "cpus": 0.5,
+  "mem": 1024,
+  "disk": 0,
+  "instances": 1,
+  "acceptedResourceRoles": [
+    "*"
+  ],
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "forcePullImage": true,
+      "image": "repo.eduwill.net:12000/jarvis-lib:v57",
+      "parameters": [],
+      "privileged": false
+    },
+    "volumes": [{
+        "containerPath": "/etc/localtime",
+        "hostPath": "/etc/localtime",
+        "mode": "RO"
+      },
+      {
+        "containerPath": "/usr/local/go/logs/s-jarvis-lib",
+        "hostPath": "/var/log/jarvis/s-jarvis-lib",
+        "mode": "RW"
+      }
+    ],
+    "portMappings": [{
+      "containerPort": 8080,
+      "hostPort": 0,
+      "labels": {},
+      "protocol": "tcp",
+      "servicePort": 10040
+    }]
+  },
+  "env": {
+    "env": "stg",
+    "TZ": "Asia/Seoul"
+  },
+  "healthChecks": [{
+    "gracePeriodSeconds": 300,
+    "intervalSeconds": 10,
+    "maxConsecutiveFailures": 3,
+    "portIndex": 0,
+    "protocol": "TCP",
+    "ipProtocol": "IPv4",
+    "timeoutSeconds": 20,
+    "delaySeconds": 15
+  }],
+  "labels": {
+    "HAPROXY_0_MODE": "HTTP",
+    "HAPROXY_GROUP": "marathon-ext",
+    "HAPROXY_0_VHOST": "s-jarvis-lib.eduwill.net"
+  },
+  "networks": [{
+    "mode": "container/bridge"
+  }],
+  "portDefinitions": [],
+  "fetch": [{
+    "uri": "file:///etc/docker-repo.tar.gz",
+    "extract": true,
+    "executable": false,
+    "cache": false
+  }]
+}
